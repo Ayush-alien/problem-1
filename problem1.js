@@ -1,6 +1,9 @@
 let str = "Hello";
 let count = {};
 for(let i = 0; i < str.length; i++){
+    if(str[i] === " "){
+        continue;
+    }
     if(count[str[i]]){
         count[str[i]]=count[str[i]]+1 
     }else{
